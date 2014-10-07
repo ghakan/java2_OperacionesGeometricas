@@ -2,6 +2,8 @@ import java.util.Scanner;
 import com.zubiri.geometria.Circulo;
 import com.zubiri.geometria.Rectangulo;
 
+//CLASSPATH=:/home/zubiri/ProyectosJava; export CLASSPATH
+
 public class OperacionesGeometricas {
 
 	public static void main (String[] args) {
@@ -15,7 +17,7 @@ public class OperacionesGeometricas {
 	seleccion = sc.next();
 
 
-	if(seleccion.equals("circulo")){
+	if(seleccion.equalsIgnoreCase("circulo")){
 	//System.out.println("has elegido circulo");
 
 	float numero1, resultadoArea, resultadoCircun;
@@ -47,10 +49,10 @@ public class OperacionesGeometricas {
           System.out.print("Estamos trabajando con un rectangulo");
 
           System.out.print("\ningresa la altura: ");
-          altura = sc.nextDouble();
+          altura = sc.nextFloat();
 
 	  System.out.print("\ningresa la base: ");
-          base = sc.nextDouble();
+          base = sc.nextFloat();
 	  
 	  rectangulo.setAltura(altura);
 	  rectangulo.setBase(base);
